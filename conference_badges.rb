@@ -23,5 +23,8 @@ end
  #   * *Hint*: Remember that methods can call other methods. If the return value of `assign_rooms` is an array of room assignments, how can you print out each assignment? You'll need to iterate over your array of room assignments in order to `puts` out each individual assignment.
 
  def printer(speakers)
-   batch_badge_creator(speakers)
-   puts 
+   batch_badge_creator(speakers).each do |string|
+   end
+ end
+ 
+    
