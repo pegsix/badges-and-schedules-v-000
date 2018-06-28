@@ -5,7 +5,7 @@ def badge_maker(name)
 end
 
 
-speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+# speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
  def batch_badge_creator(speakers)
   speakers.map do|speaker|
@@ -13,7 +13,7 @@ speakers = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
      end
   end
 
- def assign_rooms
+ def assign_rooms(speakers)
    speakers.map.with_index(1) do |speaker,room|
    "Hello, #{speakers}! You'll be assigned to room #{room}!"
   end
